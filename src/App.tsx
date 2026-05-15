@@ -1,17 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Sparkles, Zap, Shield, Heart } from "lucide-react";
 
-export const Route = createFileRoute("/")({
-  component: Index,
-  head: () => ({
-    meta: [
-      { title: "Nova Studio — Tworzymy rzeczy, które zachwycają" },
-      { name: "description", content: "Przykładowa strona stworzona w Lovable. Nowoczesny design, czysty kod, gotowy do edycji." },
-    ],
-  }),
-});
-
-function Index() {
+export default function App() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Nav */}
